@@ -1,5 +1,25 @@
+Game appearance   
+- Date of showing
+- Date created
+- Mascot ID
+
+Mascot Roster
+- Mascot Name
+-Species
+-Cost
+-ID
+
+Team Name
+- Team name
+-  No Mascot
+
+Teams
+- Name
+- ID
+
+
 Select count(*)
-From(SELECT LEFT(firstname, 1) as FIRSTNAME_Initial
+From(SELECT LEFT(Team_name, 1) as Team_Initial
     , Mascot_roster.species
     , Format(Game_appearance.Mascot_ID,0)
     , Teams.NAME
@@ -20,22 +40,3 @@ or teams.ID = 27
 Group by ac.BADGENUM
 Order by u.lastname asc/*)PS
 
-
-Game appearance   
-- Date of showing
-- Date created
-- Mascot ID
-
-Mascot Roster
-- Mascot Name
--Species
--Cost
--ID
-
-Team Name
-- Team name
--  No Mascot
-
-Teams
-- Name
-- ID
