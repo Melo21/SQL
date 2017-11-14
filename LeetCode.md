@@ -1,5 +1,6 @@
 # SQL Problem Solving
-1. Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+1. Duplicate Emails 
+Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 ```
 +----+------------------+
 | Id | Email            |
@@ -27,7 +28,9 @@ where p.ID not in
 (Select ID from (select min(Person.id) as ID from person group by Person.email) as tobeDel)
 ```
 
-2. Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update query and no intermediate temp table.
+2. Swap Salary
+
+Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update query and no intermediate temp table.
 
 For example:
 ```
@@ -51,7 +54,9 @@ After running your query, the above salary table should have the following rows:
 
 Update salary set sex = IF(sex = 'm','f','m')
 
-3. The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
+3. 	Employees Earning More Than Their Managers   
+
+The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 ```
 +----+-------+--------+-----------+
 | Id | Name  | Salary | ManagerId |
