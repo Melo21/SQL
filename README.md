@@ -1,7 +1,7 @@
 # SQL
 
-##Write a SQL query to get the nth highest salary from the Employee table.</h1>
-
+###Write a SQL query to get the nth highest salary from the Employee table.</h1>
+---
 ```
 +----+--------+
 | Id | Salary |
@@ -14,8 +14,10 @@
 
 For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
 
+```
 +------------------------+
 | getNthHighestSalary(2) |
 +------------------------+
 | 200                    |
 +------------------------+
+```
