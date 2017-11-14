@@ -1,5 +1,4 @@
 # SQL Problem Solving
----
 1. Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 ```
 +----+------------------+
