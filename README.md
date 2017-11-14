@@ -20,7 +20,7 @@ For example, after running your query, the above Person table should have the fo
 +----+------------------+
 ```
 
-**Solution:
+**Solution:**
 ```
 Delete p from Person p
 where p.ID not in 
@@ -47,7 +47,7 @@ After running your query, the above salary table should have the following rows:
 | 3  | C    | f   | 5500   |
 | 4  | D    | m   | 500    |
 ```
-**Solution:
+**Solution:**
 
 update salary set sex = IF(sex = 'm','f','m')
 
