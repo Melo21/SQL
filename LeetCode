@@ -1,4 +1,4 @@
-Write a SQL query to get the nth highest salary from the Employee table.
+<b>Write a SQL query to get the nth highest salary from the Employee table.</b>
 
 +----+--------+
 | Id | Salary |
