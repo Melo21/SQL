@@ -49,10 +49,30 @@ After running your query, the above salary table should have the following rows:
 ```
 **Solution:**
 
-update salary set sex = IF(sex = 'm','f','m')
+Update salary set sex = IF(sex = 'm','f','m')
 
+3. The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
+```
++----+-------+--------+-----------+
+| Id | Name  | Salary | ManagerId |
++----+-------+--------+-----------+
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | NULL      |
+| 4  | Max   | 90000  | NULL      |
++----+-------+--------+-----------+
+```
+Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+```
++----------+
+| Employee |
++----------+
+| Joe      |
++----------+
+```
+**Solution**
 
-3. Write a SQL query to get the nth highest salary from the Employee table.</h1>
+4. Write a SQL query to get the nth highest salary from the Employee table.</h1>
 ```
 +----+--------+
 | Id | Salary |
