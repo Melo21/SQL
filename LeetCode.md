@@ -85,7 +85,9 @@ on emp.managerid = boss.id
 where emp.salary > boss.salary
 ```
 
-4. Write a SQL query to get the nth highest salary from the Employee table.</h1>
+4. Nth Highest Salary   
+
+Write a SQL query to get the nth highest salary from the Employee table.</h1>
 ```
 +----+--------+
 | Id | Salary |
