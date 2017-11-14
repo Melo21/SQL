@@ -1,6 +1,6 @@
-# SQL
+# SQL Problem Solving
 
-###Write a SQL query to get the nth highest salary from the Employee table.</h1>
+Write a SQL query to get the nth highest salary from the Employee table.</h1>
 ---
 ```
 +----+--------+
