@@ -1,6 +1,6 @@
 # SQL Problem Solving
-
-Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+---
+1. Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 ```
 +----+------------------+
 | Id | Email            |
@@ -45,8 +45,7 @@ where p.ID not in
 
 
 
-Write a SQL query to get the nth highest salary from the Employee table.</h1>
----
+2. Write a SQL query to get the nth highest salary from the Employee table.</h1>
 ```
 +----+--------+
 | Id | Salary |
