@@ -71,6 +71,14 @@ Given the Employee table, write a SQL query that finds out employees who earn mo
 +----------+
 ```
 **Solution**
+```
+Select emp.NAME from 
+(select managerid,name,salary from employee where managerid is not null) as emp 
+left join
+(select id,name,salary from employee where managerid is null) as boss 
+on emp.managerid = boss.id
+where emp.salary > boss.salary
+```
 
 4. Write a SQL query to get the nth highest salary from the Employee table.</h1>
 ```
