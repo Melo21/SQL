@@ -117,3 +117,6 @@ Should output:
 ```
 Note:
 The students should not be counted duplicate in each course.
+```
+Select Class from courses group by class having count(distinct student) > 4
+```
