@@ -85,25 +85,35 @@ on emp.managerid = boss.id
 where emp.salary > boss.salary
 ```
 
-4. Nth Highest Salary   
+4. Classes More Than 5 Students
 
-Write a SQL query to get the nth highest salary from the Employee table.</h1>
-```
-+----+--------+
-| Id | Salary |
-+----+--------+
-| 1  | 100    |
-| 2  | 200    |
-| 3  | 300    |
-+----+--------+
-```
+There is a table courses with columns: student and class
 
-For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
+Please list out all classes which have more than or equal to 5 students.
 
+For example, the table:
 ```
-+------------------------+
-| getNthHighestSalary(2) |
-+------------------------+
-| 200                    |
-+------------------------+
++---------+------------+
+| student | class      |
++---------+------------+
+| A       | Math       |
+| B       | English    |
+| C       | Math       |
+| D       | Biology    |
+| E       | Math       |
+| F       | Computer   |
+| G       | Math       |
+| H       | Math       |
+| I       | Math       |
++---------+------------+
 ```
+Should output:
+```
++---------+
+| class   |
++---------+
+| Math    |
++---------+
+```
+Note:
+The students should not be counted duplicate in each course.
